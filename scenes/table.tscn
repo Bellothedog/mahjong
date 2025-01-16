@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://byv4qyynnq8kw"]
+[gd_scene load_steps=4 format=3 uid="uid://byv4qyynnq8kw"]
 
-[ext_resource type="Script" path="res://src/tileManager.gd" id="1_v88w3"]
+[ext_resource type="Script" path="res://src/gameManager.gd" id="1_i34cu"]
+[ext_resource type="Texture2D" uid="uid://dupq4cb5fapoh" path="res://assets/table.png" id="2_ccn2v"]
+[ext_resource type="PackedScene" uid="uid://jvky3jxq7km7" path="res://scenes/hand.tscn" id="3_rgsry"]
 
 [node name="table" type="Node2D"]
-script = ExtResource("1_v88w3")
+script = ExtResource("1_i34cu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("2_ccn2v")
+
+[node name="hand" parent="." instance=ExtResource("3_rgsry")]
