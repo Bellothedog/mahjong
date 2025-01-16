@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://byv4qyynnq8kw"]
 
-[ext_resource type="Script" path="res://scenes/tileManager.gd" id="1_v88w3"]
+[ext_resource type="Script" path="res://src/tileManager.gd" id="1_v88w3"]
 
 [node name="table" type="Node2D"]
 script = ExtResource("1_v88w3")
