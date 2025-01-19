@@ -2,8 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://t1kt1ntaqdeq" path="res://assets/sheet.png" id="1_xjf7n"]
 
-[node name="tile" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D"]
 texture = ExtResource("1_xjf7n")
 region_enabled = true
+region_rect = Rect2(135, 195, 18, 26)

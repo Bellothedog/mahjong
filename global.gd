@@ -1,7 +1,34 @@
 extends Node
 
 var gameWind = ''
-var HandWind = ''
+var handWind = 0
+
+# Stats for individual players. Numbers = turn order. In single player, the
+# player is player 1 and the others are CPU.
+var player1 = {
+	'Hand Wind' = '',
+	'Round Score' = 0,
+	'Total Score' = 0,
+	'Hand' = []
+}
+var player2 = {
+	'Hand Wind' = '',
+	'Round Score' = 0,
+	'Total Score' = 0,
+	'Hand' = []
+}
+var player3 = {
+	'Hand Wind' = '',
+	'Round Score' = 0,
+	'Total Score' = 0,
+	'Hand' = []
+}
+var player4 = {
+	'Hand Wind' = '',
+	'Round Score' = 0,
+	'Total Score' = 0,
+	'Hand' = []
+}
 
 var tiles = []
 var deadWall = []
@@ -14,7 +41,12 @@ var suits = [
 	]
 var dora = ''
 
-var eastHand = []
-var southHand = []
-var westHand = []
-var northHand = []
+# Rect2's of first tile in suit
+var suitToRectangle = [
+	Rect2(7, 99, 18, 26), # numbers
+	Rect2(7, 163, 18, 26), # circles
+	Rect2(7, 131, 18, 26), # bamboo
+	Rect2(7, 195, 18, 26), # winds
+	Rect2(135, 195, 18, 26) # dragons
+	
+]
